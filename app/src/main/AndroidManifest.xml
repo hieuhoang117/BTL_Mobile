@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools" >
+    <uses-permission android:name="android.permission.INTERNET"/>
 
     <application
+        android:usesCleartextTraffic="true"
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
         android:icon="@mipmap/ic_launcher"
-        android:label="Metflix"
+        android:label="Netflix"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.BTLMobile" >
@@ -23,6 +25,17 @@
         <activity
             android:name=".MainActivity2"
             android:exported="true" />
+        <activity android:name=".profile"
+            android:exported="true"/>
+        <activity android:name=".af_login"
+            android:exported="true"/>
+        <activity android:name=".MoviePlay"
+            android:exported="true"
+            android:screenOrientation="landscape"
+            android:configChanges="orientation|screenSize" />
+        <activity android:name=".MovieDetailActivity"
+            android:exported="true" />
+
     </application>
 
 </manifest>

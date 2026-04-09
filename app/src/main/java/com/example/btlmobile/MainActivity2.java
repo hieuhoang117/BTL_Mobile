@@ -2,12 +2,15 @@ package com.example.btlmobile;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
+import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.Adapter;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.Spinner;
 import android.widget.TextView;
 
@@ -57,7 +60,17 @@ public class MainActivity2 extends AppCompatActivity {
         SlideAdapter slideAdapter = new SlideAdapter(images);
         viewPager.setAdapter(slideAdapter);
 
-// bắt đầu ở giữa để lướt 2 chiều
         viewPager.setCurrentItem(1000);
+
+
+        Button btndn=findViewById(R.id.btndn1);
+        btndn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity2.this, profile.class);
+                startActivity(intent);
+            }
+        });
+
     }
 }
