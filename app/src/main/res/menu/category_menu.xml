@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/cat_action"
+        android:title="Hành động" />
+    <item
+        android:id="@+id/cat_comedy"
+        android:title="Hài hước" />
+    <item
+        android:id="@+id/cat_drama"
+        android:title="Chính kịch" />
+    <item
+        android:id="@+id/cat_horror"
+        android:title="Kinh dị" />
+    <item
+        android:id="@+id/cat_romance"
+        android:title="Lãng mạn" />
+    <item
+        android:id="@+id/cat_scifi"
+        android:title="Viễn tưởng" />
+    <item
+        android:id="@+id/cat_anime"
+        android:title="Anime" />
+</menu>
